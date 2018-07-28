@@ -1,0 +1,21 @@
+TARGET = motion_sample
+OBJS = sample.o
+
+CFLAGS = -O2 -G0 -Wall
+CXXFLAGS = $(CFLAGS) -fno-exceptions -fno-rtti
+ASFLAGS = $(CFLAGS)
+
+LIBDIR =
+LIBS = -lmotion_driver
+LDFLAGS =
+
+USE_USER_LIBS = 1
+
+EXTRA_TARGETS = EBOOT.PBP
+PSP_EBOOT_TITLE = Motion sample
+
+PSPSDK=$(shell psp-config --pspsdk-path)
+include $(PSPSDK)/lib/build.mak
+
+all:
+	mv EBOOT.PBP MOTIONSAMPLE/EBOOT.PBP

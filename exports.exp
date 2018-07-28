@@ -1,0 +1,32 @@
+# Define the exports for the prx
+PSP_BEGIN_EXPORTS
+
+# These four lines are mandatory (although you can add other functions like module_stop)
+# syslib is a psynonym for the single mandatory export.
+PSP_EXPORT_START(syslib, 0, 0x8000)
+PSP_EXPORT_FUNC(module_start)
+PSP_EXPORT_FUNC(module_stop)
+PSP_EXPORT_FUNC(module_reboot_before)
+PSP_EXPORT_VAR(module_info)
+PSP_EXPORT_END
+
+PSP_EXPORT_START(motion_driver, 0, 0x4001)
+PSP_EXPORT_FUNC(motionGetDriverVersion)
+PSP_EXPORT_FUNC(motionDriverVersionString)
+PSP_EXPORT_FUNC(motionEnable)
+PSP_EXPORT_FUNC(motionDisable)
+PSP_EXPORT_FUNC(motionDisableForward)
+PSP_EXPORT_FUNC(motionSetForward)
+PSP_EXPORT_FUNC(motionGetForward)
+PSP_EXPORT_FUNC(motionSetFilter)
+PSP_EXPORT_FUNC(motionSetPow)
+PSP_EXPORT_FUNC(motionGetAccel)
+PSP_EXPORT_FUNC(motionGetRelAccel)
+PSP_EXPORT_FUNC(motionGetRotation)
+PSP_EXPORT_FUNC(motionExists)
+PSP_EXPORT_FUNC(motionEnabled)
+PSP_EXPORT_FUNC(motionSetSampling)
+PSP_EXPORT_FUNC(motionGetSampling)
+PSP_EXPORT_END
+
+PSP_END_EXPORTS

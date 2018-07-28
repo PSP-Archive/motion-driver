@@ -1,0 +1,137 @@
+$ prxtool -o prxtool.txt -f motion_drv.prx
+PRXTool v1.1 : (c) TyRaNiD 2k6
+Built: Dec 30 2007 11:47:47
+Loaded PRX motion_drv.prx successfully
+Module information
+
+Name:    motion_driver
+Attrib:  1006
+Version: 1.0
+GP:      0000CE00
+
+Exports:
+Export 0, Name syslib, Functions 3, Variables 1, flags 80000000
+Functions:
+0xD632ACDB [0x00000614] - module_start
+0xCEE8593C [0x000005D8] - module_stop
+0x2F064FA6 [0x0000059C] - module_reboot_before
+Variables:
+0xF01D73A7 [0x00003860] - module_info
+Export 1, Name motion_driver, Functions 15, Variables 0, flags 40010000
+Functions:
+0xEB4A30BC [0x00000338] - motion_driver_EB4A30BC
+0x50FA90AC [0x00000344] - motion_driver_50FA90AC
+0xA33941D6 [0x00000358] - motion_driver_A33941D6
+0x4B7C4DEC [0x00000570] - motion_driver_4B7C4DEC
+0x9523DD23 [0x00000368] - motion_driver_9523DD23
+0xEE6B06A6 [0x000003A4] - motion_driver_EE6B06A6
+0x597EC13C [0x000003DC] - motion_driver_597EC13C
+0x02194114 [0x00000418] - motion_driver_02194114
+0x714826B3 [0x0000045C] - motion_driver_714826B3
+0x42109DA9 [0x00000490] - motion_driver_42109DA9
+0xE97D21B8 [0x000004B0] - motion_driver_E97D21B8
+0xE0480016 [0x000004D0] - motion_driver_E0480016
+0x991F7996 [0x000004F4] - motion_driver_991F7996
+0x3935F08D [0x00000500] - motion_driver_3935F08D
+0xC3CF0383 [0x00000540] - motion_driver_C3CF0383
+
+Imports:
+Import 0, Name sceCodec_driver, Functions 14, Variables 0, flags 00010011
+Functions:
+0x02133959 [0x000034E0] - sceCodec_driver_02133959
+0x20C61103 [0x000034E8] - sceCodec_driver_20C61103
+0x261C6EE8 [0x000034F0] - sceCodec_driver_261C6EE8
+0x28A49CCA [0x000034F8] - sceCodec_driver_28A49CCA
+0x3064C53D [0x00003500] - sceCodec_driver_3064C53D
+0x31B2E41E [0x00003508] - sceCodec_driver_31B2E41E
+0x359C2B9F [0x00003510] - sceCodec_driver_359C2B9F
+0x40D5C897 [0x00003518] - sceCodec_driver_40D5C897
+0x6D945509 [0x00003520] - sceCodec_driver_6D945509
+0x856E7487 [0x00003528] - sceCodec_driver_856E7487
+0xBD8E0977 [0x00003530] - sceCodec_driver_BD8E0977
+0xC513C747 [0x00003538] - sceCodec_driver_C513C747
+0xDFBCACF3 [0x00003540] - sceCodec_driver_DFBCACF3
+0xEEB91526 [0x00003548] - sceCodec_driver_EEB91526
+Import 1, Name sceUmd, Functions 4, Variables 0, flags 00090000
+Functions:
+0x46EBB729 [0x00003550] - sceUmd_46EBB729
+0x8EF08FCE [0x00003558] - sceUmd_8EF08FCE
+0xC6183D47 [0x00003560] - sceUmd_C6183D47
+0xE83742BA [0x00003568] - sceUmd_E83742BA
+Import 2, Name sceHprm_driver, Functions 4, Variables 0, flags 00010000
+Functions:
+0x1C5BC5A0 [0x00003570] - sceHprm_driver_1C5BC5A0
+0x588845DA [0x00003578] - sceHprm_driver_588845DA
+0x208DB1BD [0x00003580] - sceHprm_driver_208DB1BD
+0x7E69EDA4 [0x00003588] - sceHprm_driver_7E69EDA4
+Import 3, Name scePower_driver, Functions 2, Variables 0, flags 00010000
+Functions:
+0xEFD3C963 [0x00003590] - scePower_driver_EFD3C963
+0x04B7766E [0x00003598] - scePower_driver_04B7766E
+Import 4, Name sceDisplay_driver, Functions 1, Variables 0, flags 00010000
+Functions:
+0x289D82FE [0x000035A0] - sceDisplay_driver_289D82FE
+Import 5, Name sceCtrl_driver, Functions 4, Variables 0, flags 00010000
+Functions:
+0x3A622550 [0x000035A8] - sceCtrl_driver_3A622550
+0xC152080A [0x000035B0] - sceCtrl_driver_C152080A
+0x1F803938 [0x000035B8] - sceCtrl_driver_1F803938
+0x60B81F86 [0x000035C0] - sceCtrl_driver_60B81F86
+Import 6, Name IoFileMgrForKernel, Functions 4, Variables 0, flags 00010000
+Functions:
+0x810C4BC3 [0x000035C8] - IoFileMgrForKernel_810C4BC3
+0x109F50BC [0x000035D0] - IoFileMgrForKernel_109F50BC
+0x6A638D83 [0x000035D8] - IoFileMgrForKernel_6A638D83
+0x42EC03AC [0x000035E0] - IoFileMgrForKernel_42EC03AC
+Import 7, Name StdioForKernel, Functions 1, Variables 0, flags 00010000
+Functions:
+0xCAB439DF [0x000035E8] - StdioForKernel_CAB439DF
+Import 8, Name sceSysreg_driver, Functions 2, Variables 0, flags 00010000
+Functions:
+0x7FD7A631 [0x000035F0] - sceSysreg_driver_7FD7A631
+0xBB823481 [0x000035F8] - sceSysreg_driver_BB823481
+Import 9, Name UtilsForKernel, Functions 3, Variables 0, flags 00090000
+Functions:
+0xB435DEC5 [0x00003600] - UtilsForKernel_B435DEC5
+0x3EE30821 [0x00003608] - UtilsForKernel_3EE30821
+0x920F104A [0x00003610] - UtilsForKernel_920F104A
+Import 10, Name sceSyscon_driver, Functions 3, Variables 0, flags 00010000
+Functions:
+0xBBFB70C0 [0x00003618] - sceSyscon_driver_BBFB70C0
+0x805180D1 [0x00003620] - sceSyscon_driver_805180D1
+0x44439604 [0x00003628] - sceSyscon_driver_44439604
+Import 11, Name InterruptManagerForKernel, Functions 6, Variables 0, flags 00010
+000
+Functions:
+0x092968F4 [0x00003630] - InterruptManagerForKernel_092968F4
+0x5F10D406 [0x00003638] - InterruptManagerForKernel_5F10D406
+0x58DD8978 [0x00003640] - InterruptManagerForKernel_58DD8978
+0xF987B1F0 [0x00003648] - InterruptManagerForKernel_F987B1F0
+0x4D6E7305 [0x00003650] - InterruptManagerForKernel_4D6E7305
+0xD774BA45 [0x00003658] - InterruptManagerForKernel_D774BA45
+Import 12, Name ThreadManForKernel, Functions 5, Variables 0, flags 00010000
+Functions:
+0xE81CAF8F [0x00003660] - ThreadManForKernel_E81CAF8F
+0xCEADEB47 [0x00003668] - ThreadManForKernel_CEADEB47
+0x446D8DE6 [0x00003670] - ThreadManForKernel_446D8DE6
+0x9FA03CD3 [0x00003678] - ThreadManForKernel_9FA03CD3
+0xF475845D [0x00003680] - ThreadManForKernel_F475845D
+Import 13, Name SysclibForKernel, Functions 7, Variables 0, flags 00010000
+Functions:
+0x87F8D2DA [0x00003688] - SysclibForKernel_87F8D2DA
+0xC0AB8932 [0x00003690] - SysclibForKernel_C0AB8932
+0xEC6F1CF2 [0x00003698] - SysclibForKernel_EC6F1CF2
+0xB1DC2AE8 [0x000036A0] - SysclibForKernel_B1DC2AE8
+0x52DF196C [0x000036A8] - SysclibForKernel_52DF196C
+0x10F3BB61 [0x000036B0] - SysclibForKernel_10F3BB61
+0x7661E728 [0x000036B8] - SysclibForKernel_7661E728
+Import 14, Name sceImpose_driver, Functions 1, Variables 0, flags 00010000
+Functions:
+0x531C9778 [0x000036C0] - sceImpose_driver_531C9778
+Import 15, Name InitForKernel, Functions 4, Variables 0, flags 00090000
+Functions:
+0x27932388 [0x000036C8] - InitForKernel_27932388
+0x7233B5BC [0x000036D0] - InitForKernel_7233B5BC
+0x7A2333AD [0x000036D8] - InitForKernel_7A2333AD
+0xA6E71B93 [0x000036E0] - InitForKernel_A6E71B93
+Done
