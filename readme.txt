@@ -1,7 +1,7 @@
 Motion kit driver for Neoflash PSP Motion kit
 Version 1.0.0b
 
-Copyright 2007-2008 Alexander Berl <raphael@fx-world.org>
+Copyright 2007-2008 Alexander Berl <a.berl@outlook.com>
 
 
 
@@ -53,8 +53,7 @@ path to the homebrew or the UMD Game ID. VSH and POPS are also possible.
 
 5. Contact
 
-http://wordpress.fx-world.org
-raphael@fx-world.org
+a.berl@outlook.com
 
 
 
