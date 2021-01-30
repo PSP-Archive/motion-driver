@@ -1,0 +1,33 @@
+-Reverse engineer impose.prx's sceAudioRouting functions - might be
+ solution to proper sound output with motion kit plugged in * DONE - no solution to the problem :(
+
+- Ensure compatibility with sceHprm_driver:
+  If a motion kit is possibly detected, don't quit hprm and just disable interrupts and change the UART baud rate,
+  then poll for the motion kit's response and set the motion kit flag to enabled on success, then reset baud rate to Hprm standard (4800)
+  In the main loop, do the same whenever polling the motion kit.
+  ALTERNATIVE: Setup own callback for remote power and headphone connect and disable hprm while motion kit is enabled
+  * first works with a small limitation currently - sceHprm disables UART IO and powers down the SIO if no remote is detected,
+    causing the input of the motion kit to be surpressed for a few seconds
+
+
+- Add a SDK for the driver with following features:
+  * startup driver: loads the prx if not already done
+  * enable/disable
+  * setFilter( int n, float weight )
+  * setPow( float pow )
+  * getAccel: return current X/Y/Z acceleration
+  * getRot: return current X/Y/Z rotation, relative to startup rotation
+  * (getAccum: return current accumulated X/Y/Z acceleration)
+  * provide a header and library with imports from the prx
+  * provide a sample code to show usage
+
+
+- FEAT:
+  * per axis threshold for rotation/acceleration * DONE
+  * add motionUnload() to be able to unload current running driver and load a newer version if required
+    - sceKernelStopUnloadSelfModule
+
+- BUGS:
+  * NOTE won't mute anymore * DONE
+  * motion kit isn't detected after resume from standby
+  * only one directional button recognized at a time/constant input from one button blocks others
