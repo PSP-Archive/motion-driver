@@ -1,9 +1,3 @@
 *.o
-<<<<<<< HEAD
-*.PBP
-*.prx
-*.SFO
-=======
 *.zip
->>>>>>> psp-motion-driver/master
 *.elf
